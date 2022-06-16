@@ -1,0 +1,106 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+
+body{
+    font-family: Arial, Helvetica, sans-serif; /* Шрифт поменяли */
+}
+
+a{
+    text-decoration: none; /* убирает подчеркивание строк */
+    color: black; /*цвет буквы меняем*/
+}
+
+header{
+    display: flex;
+    justify-content: space-between;
+    background-color: #6d00d3;
+    align-items: center; 
+    padding: 10px 80px; /* оступы от боков  */
+}
+
+.menu{
+    display: flex;
+    justify-content: space-between; /* определяет горизонтальное положение элементов */
+    align-items: center;
+    width: 400px; /* ширина между  мое кино - магазин - мои покупки*/
+}
+
+.logo{
+    font-size: 32px;
+    color: aqua;
+}
+
+.logo:hover{
+    color: red; /* при наведении на лого меняет цвет */
+}
+
+.menu_item{
+    font-size: 19px;
+    color: #87cefa;
+    border-bottom: 3px solid transparent; /* прозрачная линия ((trasparant)можно поменять на другой цвет для наглядного вида) нужна для того чтобы при наведении на меню (Мое кино ...) текст не прыгал*/
+}
+
+.menu_item:hover{ /* стиль при наведении курсора будет подсвечивание в оранжевый */
+    color: orange;
+    border-bottom: 3px solid orange; /* подчеркавание меню при наведении курсора */
+}
+
+.account{
+    font-size: 24px;
+    color: aqua;
+}
+
+img{
+    height: 300px;
+}
+
+.wrapper{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap; /* при сужении странницы, элементы переносятся на другую строку */
+}
+
+main{
+    padding: 0 250px 50px 250px; /* отсупы только снизу, т.к. первый о - вехний*/
+}
+
+h3, p{
+    color: #6d00d3;
+}
+
+.film_title{
+    font-weight: bold;
+    margin-top: 10px; /* отступ между картинкой и названием фильма*/
+    margin-bottom: 3px;
+}
+
+h3{
+    margin-bottom: 15px; /* отступ между картинкой и надписью "Новое в подписке"*/
+    margin-top: 50px;
+}
+
+.icon{
+    cursor: pointer; /* меняем курсор (обычную стрелку) на руку */
+}
+
+div .menu_item{
+    padding: 0px 9px 18px 9px;
+}
+
+.film_score{ /* добаляеем рейтинг в углу картинки фильма */
+    width: 40px;
+    height: 20px;
+    background-color: green;
+    color: white;
+    text-align: center;
+
+    position: absolute; /* внесли рейтинг на картинку, получилсось что рейтинг стоит в углу картинки */
+    top: 15px;
+    left: -7px;
+}
+
+.film_item{
+    position: relative; /* сразу ко все применим рейтинг в углу картинки */
+}

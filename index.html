@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Tel-ran Kino</title>
+</head>
+
+<body>
+    <header>
+        <a href="/index.html" class="logo">Tel-ran Kino</a>
+        <nav class="menu">
+            <!--симатический тег для навигационного меню-->
+           <div><a href="#" class="menu_item">Мое кино</a></div>
+           <div><a href="#" class="menu_item">Магазин</a></div>
+           <div><a href="#" class="menu_item">Мои покупки</a></div>    
+            <!-- Здесь создаем иконку поиска (лупа)-->
+           <div><a href="#" class="menu_item">
+                <i class="fa-solid fa-magnifying-glass menu_item icon"></i></div>
+                </a>          <!-- иконка поиска (лупа)-->
+        </nav>
+        <a href="#" class="account">Личный кабинет</a>
+    </header>
+
+    <main>
+        <section id="new_films">    <!-- Создаем секции, т.е. разделяем страницу на блоки -->
+            <h3>Новое в подписке</h3>
+            <div class="wrapper">
+                <div class="film_item">
+                    <a href="https://ru.wikipedia.org/wiki/Сиротский_Бруклин" target="_blank">
+                        <div class="film_score">7.8</div> <!-- создаем класс для создания рейтинга в угли картинки -->
+                        <img src="img/bryklin.jpg" alt="Cиротский Бруклин">
+                        <p class="film_title">Сиротский Бруклин</p>
+                        <p class="description">2019, криминал</p>
+                    </a>
+                </div>
+
+                <div class="film_item">
+                    <a href="https://ru.wikipedia.org/wiki/Доктор_Стрэндж" target="_blank">
+                        <div class="film_score">9.8</div>
+                        <img src="img/doctor_strange.jpg" alt="Cиротский Бруклин">
+                        <p class="film_title">Доктор Стрэндж</p>
+                        <p class="description">2016, фэнтэзи</p>
+                    </a>
+                </div>
+
+                <div class="film_item">
+                    <a href="https://ru.wikipedia.org/wiki/Стекло_(фильм,_2019)" target="_blank">
+                        <div class="film_score">8.8</div>
+                        <img src="img/glass.jpg" alt="Cиротский Бруклин">
+                        <p class="film_title">Стекло</p>
+                        <p class="description">2019, триллер</p>
+                    </a>
+                </div>
+
+                <div class="film_item">
+                    <a href="https://ru.wikipedia.org/wiki/Мулан_(фильм,_2020,_Дисней)" target="_blank">
+                        <div class="film_score">8.0</div>
+                        <img src="img/mulan.jpeg" alt="Cиротский Бруклин">
+                        <p class="film_title">Мулан</p>
+                        <p class="description">2020, боевик</p>
+                    </a>
+                </div>
+
+            </div>
+        </section>
+
+        <section id="recomendations">
+            <h3>Рекомендуем посмотреть</h3>
+            <div class="wrapper">
+                <div class="film_item">
+                    <a href="https://ru.wikipedia.org/wiki/Миньоны_(мультфильм)" target="_blank">
+                        <div class="film_score">9.8</div>
+                        <img src="img/min.jpg" alt="Миньоны">
+                        <p class="film_title">Миньоны</p>
+                        <p class="description">2015, комедия</p>
+                    </a>
+                </div>
+
+                <div class="film_item">
+                    <a href="https://ru.wikipedia.org/wiki/Хан_Соло._Звёздные_войны:_Истории" target="_blank">
+                        <div class="film_score">8.5</div>
+                        <img src="img/solo.jpg" alt="Хан Соло">
+                        <p class="film_title">Хан Соло</p>
+                        <p class="description">2018, фэнтэзи</p>
+                    </a>
+                </div>
+
+                <div class="film_item">
+                    <a href="https://ru.wikipedia.org/wiki/Звёздные_войны:_Пробуждение_силы" target="_blank">
+                        <div class="film_score">10</div>
+                        <img src="img/star_wars.jpg" alt="Звездные войны">
+                        <p class="film_title">Звездные войны</p>
+                        <p class="description">2015, фэнтэзи</p>
+                    </a>
+                </div>
+
+                <div class="film_item">
+                    <a href="https://ru.wikipedia.org/wiki/Зверополис" target="_blank">
+                        <div class="film_score">9.2</div>
+                        <img src="img/zootropolis.jpg" alt="Зверополис">
+                        <p class="film_title">Зверополис</p>
+                        <p class="description">2016, комедия</p>
+                    </a>
+                </div>
+            </div>
+        </section>
+
+
+    </main>
+    <script src="https://kit.fontawesome.com/d426d5864f.js" crossorigin="anonymous"></script> <!-- библитека для иконки. Взяли с сайта https://fontawesome.com/icons/magnifying-glass?s=solid-->
+</body>
+</html>
